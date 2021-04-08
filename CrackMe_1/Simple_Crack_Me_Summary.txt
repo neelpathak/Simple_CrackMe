@@ -1,0 +1,24 @@
+Summary of cracking simple crackme's:
+
+   1. Run the program to observe its behaviour
+   2. Load the program in DIE/ExePEInfo to analyze the PE
+   3. Load the program in x64dbg and reverse the jumps in order
+      to avoid showing the "bad message" and instead show the
+      "good message"
+   4. Search for a proper instruction to patch (usually nops and/or jmps), and assemble
+      a new instruction to replace the old instruction.
+   5. Patch the file, load the new patch and test
+
+Useful shortcuts for x64dbg:
+
+   F9       : Run
+   F8       : Step Over
+   F7 	    : Step Into a Call
+   Ctrl F9  : Execute till Return
+   Alt  F9  : Run to User Code
+   
+Original MD5: 212c1be2cf1265719e20297e9a951b45
+Patched1: 4c68e0f28a1f35b334cb119e8b66a40b
+Patched2: 1dff611c2e218532a71b4ea267f6af63
+
+password: "crackme" (without quotes)
